@@ -2,6 +2,21 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
+To use:
+
+1. Clone this repo with `git clone https://github.com/kapunahelewong/module-injector-tree.git`
+2. `cd` into the directory
+3. `npm install`
+4. `ng serve`
+5. Open a browser to `http://localhost:4200`
+6. Open the code in your editor.
+
+There are two services, the FlowerService and the AnimalService.
+The FlowerService is available via the root ModuleInjector so the
+AppModule and LazyModule can see it, but the AnimalService is visible
+only to the LazyModule. This demonstrates the ModuleInjector tree.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
