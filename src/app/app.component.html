@@ -1,13 +1,11 @@
 <h2>Angular ModuleInjector tree and lazy loading</h2>
+<p class="instructions">Click the LazyModule button to load the LazyModule. Though the LazyModule sees the AnimalService, the root ModuleInjector doesn't see it.</p>
 <p>Flower emoji from root ModuleInjector: {{flower.emoji}}</p>
-<p>Click the LazyModule button to load the LazyModule. Though the LazyModule sees the AnimalService, the root ModuleInjector doesn't see it.</p>
 
-<!-- If you uncomment the following, there's an error because the AnimalService isn't visible to the root ModuleInjector. -->
-<!-- <p>Animal emoji from LazyModule ModuleInjector: {{animal.emoji}}</p> -->
+<!-- Comment the following to clear out the errors. If you uncomment, there's an error because the AnimalService isn't visible to the root ModuleInjector. -->
+<p class="error">Animal emoji from LazyModule ModuleInjector: <span>{{animal.emoji}}</span>  <- nothing!</p>
 
-
-<button routerLink="/lazy">Lazy module</button>
 <button routerLink="">Home</button>
-
+<button routerLink="/lazy">LazyModule</button>
 
 <router-outlet></router-outlet>

@@ -2,3 +2,18 @@
 body {
   font-family: Helvetica, sans-serif;
 }
+
+.error {
+  color: red;
+}
+
+span {
+  border: solid 2px red;
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+
+.instructions {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}

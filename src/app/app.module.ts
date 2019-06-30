@@ -5,17 +5,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { FlowerService } from './flower.service';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports:      [ 
-    BrowserModule, 
-    FormsModule, 
+  imports:      [
+    BrowserModule,
+    FormsModule,
     AppRoutingModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ],
   exports: [ RouterModule ],
-  providers: [FlowerService]
+  providers: []
 })
 export class AppModule { }
