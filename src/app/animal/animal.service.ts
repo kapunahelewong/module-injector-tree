@@ -5,6 +5,5 @@ import { AnimalModule } from './animal.module';
   providedIn: AnimalModule
 })
 export class AnimalService {
-
   emoji = '🐶';
 }
